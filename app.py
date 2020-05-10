@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_restful import Api
 
-from resources.place_record import PlaceRecord
+from resources.place_record import PlaceRecord, PlaceRecords
 
 app = Flask(__name__)
 api = Api(app)
