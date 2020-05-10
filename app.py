@@ -6,6 +6,7 @@ from resources.place_record import PlaceRecord
 app = Flask(__name__)
 api = Api(app)
 
+api.add_resource(PlaceRecords, '/placerecords/', methods=['POST'])
 api.add_resource(PlaceRecord, '/placerecords/<string:name>')
 #define path to the resource
 
