@@ -5,7 +5,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # copies all files from curr directory (source) to destination
-COPY . .
+COPY .. .
 
 # our service will listen on port 5000 - specified in app.py
 EXPOSE 5000
