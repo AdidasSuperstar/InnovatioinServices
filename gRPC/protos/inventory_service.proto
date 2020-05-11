@@ -11,6 +11,7 @@ service InventoryService {
     }
 }
 
+// these are going to be parameters in the server logic override
 message ProductType {
     string type = 1;
 }
