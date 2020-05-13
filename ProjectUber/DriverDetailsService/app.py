@@ -1,9 +1,8 @@
 from flask import Flask
 from flask_restful import Api
 
-from resources.trip_request import TripRequest, TripRequests
 from resources.driver_details import DriverRecord, DriverRecords
-from resources.driver_location import DriverLocation, DriverLocations
+
 
 app = Flask(__name__)
 api = Api(app)
