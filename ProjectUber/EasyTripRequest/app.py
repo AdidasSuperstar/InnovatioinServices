@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_restful import Api
 
-from ProjectUber.EasyTripRequest.resources.trip_request import TripRequest
+from resources.trip_request import TripRequest
 
 app = Flask(__name__)
 api = Api(app)
