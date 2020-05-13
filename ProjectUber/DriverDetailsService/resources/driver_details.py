@@ -6,28 +6,24 @@ drivers = [
     {
         "driver_id": "d12542",
         "name": "Fernando Alonso",
-        "last_location": [51.680400, 5.293250],
         "status": "offline",
         "CarType": "basic"
     },
     {
         "driver_id": "d85719",
         "name": "Daniel Ricciardo",
-        "last_location": [51.676213, 5.289145],
         "status": "available",
         "CarType": "basic"
     },
     {
         "driver_id": "d54818",
         "name": "Lewis Hamilton",
-        "last_location": [51.64751, 5.310581],
         "status": "driving",
         "CarType": "premium"
     },
     {
         "driver_id": "d762057",
         "name": "Max Verstappen",
-        "last_location": [51.71853, 5.2960],
         "status": "driving",
         "CarType": "premium"
     }
@@ -86,7 +82,5 @@ class DriverRecords(Resource):
         drivers.append(driver_to_be_created)
         return driver_to_be_created, 201  # 201 Created HTTP status code
 
-
-class DriversRecords(Resource):
     def get(self):
             return drivers, 200
