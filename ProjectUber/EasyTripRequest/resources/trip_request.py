@@ -5,15 +5,15 @@ from flask import request
 trips = [
     {   "customer_name":"Beyonce",
         "customer_id": "u314958",
-        "destination": "Schiphol Airport"
+        "destination": "SchipholAirport"
     },
     {   "customer_name": "Queen Maxima",
         "customer_id": "u035135",
-        "destination": "Tilburg University"
+        "destination": "TilburgUniversity"
     },
     {   "customer_name": "Michelle Obama",
         "customer_id": "u51351",
-        "destination": "Eindhoven University"
+        "destination": "EindhovenUniversity"
     }
 ]
 
