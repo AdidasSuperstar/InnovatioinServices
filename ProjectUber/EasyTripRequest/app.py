@@ -2,7 +2,7 @@ from flask import Flask
 from flask_restful import Api
 
 from resources.trip_request import TripRequest
-from resources.drivers import DriverRecord, DriverRecords, DriversRecords
+
 
 app = Flask(__name__)
 api = Api(app)
