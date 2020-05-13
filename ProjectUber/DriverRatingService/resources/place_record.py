@@ -9,7 +9,7 @@ driverRecords = [
         "ratingHistory": [
             3,5,4,3,5,5,4
         ],
-        "id": "18CW89Q",
+        "id": "d12542",
     },
     {
         "name": "Amber",
@@ -17,7 +17,7 @@ driverRecords = [
         "ratingHistory": [
           1,2,3
         ],
-        "id": "BVVX003",
+        "id": "d85719",
     },
     {
         "name": "Kees",
@@ -25,7 +25,7 @@ driverRecords = [
         "ratingHistory": [
             2,5,5,5,4
         ],
-        "id": "287RTQ3",
+        "id": "d54818",
     },
     {
         "name": "Eva",
@@ -77,9 +77,9 @@ class RateDriver(Resource):
 
         return {"message": "Driver record not found"}, 404
 
-    def get(self, name):
+    def get(self, driverid):
         for record in driverRecords:
-            if name == record["name"]:
+            if driverid == record["id"]:
                 return record, 200  # return 200 HTTP status code to indicate success
         return {"message": "Driver record not found"}, 404 # return 404 HTTP status code to indicate resource not found
 
