@@ -20,9 +20,9 @@ trips = [
 
 # resource place trip request
 class TripRequest(Resource):
-    def get(self, trip_name):
+    def get(self, destination):
         for trip in trips:
-            if trip_name == trip["destination"]:
+            if destination == trip["destination"]:
                 return trip, 200  # return 200 HTTP status code to indicate success
         return {"message": "Trip not found"}, 404  # return 404 HTTP status code to indicate resource not found
 
