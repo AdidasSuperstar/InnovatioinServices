@@ -80,7 +80,7 @@ class RateDriver(Resource):
     def get(self, name):
         for record in driverRecords:
             if name == record["name"]:
-                return record["rating"], 200  # return 200 HTTP status code to indicate success
+                return record, 200  # return 200 HTTP status code to indicate success
         return {"message": "Driver record not found"}, 404 # return 404 HTTP status code to indicate resource not found
 
 class DriverRatings(Resource):
